@@ -1,0 +1,19 @@
+.photo-upload__title {
+  @include container();
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}
+
+.photo-editor__image {
+  margin-bottom: 40px;
+}

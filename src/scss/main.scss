@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+@import "global";
+
+@import "../js/owl.carousel.min";
+@import "../js/owl.theme.default.min";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/download-app";
+@import "blocks/btn";
+@import "blocks/about";
+@import "blocks/diagram";
+@import "blocks/rewiews";
+@import "blocks/price";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/intro";
+
+@import "blocks/gallery";
+@import "blocks/post";
+@import "blocks/photo-upload";
+@import "blocks/photo-editor";
+
+@import "blocks/competition";
+@import "blocks/form";
+
+
+
+

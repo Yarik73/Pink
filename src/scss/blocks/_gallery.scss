@@ -1,0 +1,72 @@
+.gallery__slogan {
+  @include container();
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue-dark;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.gallery__slogan-text {
+  padding: 0 15px;
+
+  @media (min-width: $tablets) {
+    padding: 0 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 150px;
+  }
+}
+
+.gallery__wrapper {
+  @include container();
+  margin-top: 20px;
+
+  @media (min-width: $tablets) {
+    margin-top: 50px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item {
+  margin-bottom: 20px;
+  width: 300px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    min-height: 455px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(even) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+

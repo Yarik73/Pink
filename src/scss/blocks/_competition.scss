@@ -1,0 +1,33 @@
+.competition__wrapper {
+  @include container();
+  margin: 50px auto;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 100px;
+  }
+}
+
+.competition__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue-dark;
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 60px;
+  }
+}
+
+.competition__text-hidden {
+  display: inline-block;
+
+  @media (max-width: $phones-max) {
+    display: none;
+  }
+}

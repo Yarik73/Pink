@@ -1,0 +1,84 @@
+.download-app {
+  padding-top: 50px;
+  background-color: $blue-dark;
+
+  @media (min-width: $tablets) {
+    position: relative;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -550px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+}
+
+.download-app__wrapper {
+  @include container();
+  text-align: center;
+
+  @media (min-width: $tablets) {
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.download-app__title {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 300;
+  color: $white;
+  margin-bottom: 50px;
+
+  @media (max-width: $phones-max) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.download-app__list {
+  @include reset-list();
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop) {
+    margin: 50px 0;
+  }
+}
+
+.download-app__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  font-size: 0;
+  margin-right: 30px;
+  
+  &--apple {
+    background: url(../img/logo-apple.svg) no-repeat center;
+  }
+
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat center;
+  }
+
+  &--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat center;
+    margin-right: 0;
+  }
+}
+
+.download-app__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $white;
+}

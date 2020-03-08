@@ -1,0 +1,90 @@
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 30px;
+  background: none;
+  padding: 15px 25px;
+  cursor: pointer;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+    transition: .2s;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn__download {
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn-post__photo-editor {
+  width: 100%;
+  color: $pink;
+  padding: 20px 91px;
+  border: 3px solid $pink;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablets) {
+    width: auto;
+    padding: 20px 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 40px;
+    margin-bottom: 0;
+  }
+}
+
+.btn-cancel__photo-editor {
+  width: 100%;
+  color: #dddfe0;
+  padding: 20px 104px;
+  border: 3px solid #dddfe0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablets) {
+    width: auto;
+    padding: 20px 91px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 55px;
+  }
+}
+
+.btn__submit-form {
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: $green;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+
+  @media (min-width: $tablets) {
+    width: auto;
+  }
+}
+

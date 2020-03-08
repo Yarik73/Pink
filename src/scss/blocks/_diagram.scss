@@ -1,0 +1,106 @@
+.diagram {
+  @media (min-width: $phones) {
+    display: none;
+  }
+
+  @media (min-width: $tablets) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+}
+
+.diagram__wrapper {
+  @include container();
+  display: flex;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 120px;
+  }
+}
+
+.diagram__clock {
+  position: relative;
+  width: 300px;
+  margin-top: 50px;
+
+  &:before {
+    content: "24";
+    position: absolute;
+    top: 151px;
+    left: 65px;
+    font-size: 96px;
+    color: $pink;
+    font-weight: bold;
+
+    @media (min-width: $desktop) {
+      top: 176px;
+      left: 95px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+  }
+}
+
+.diagram__clock-image {
+  width: 238px;
+  height: 296px;
+
+  @media (min-width: $desktop) {
+    width: 300px;
+    height: 345px;
+  }
+}
+
+.diagram__description {
+  width: 310px;
+  margin-left: 10px;
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    margin-left: 70px;
+  }
+}
+
+.diagram__title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 36px;
+  color: $black;
+}
+
+.diagram__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $blue-dark;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.diagram__link {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $pink;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+

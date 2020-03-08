@@ -1,0 +1,95 @@
+.page-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: rgba($black, 0.3);
+  min-height: 66px;
+
+  &--full {
+    position: relative;
+  }
+
+  @media (min-width: $tablets) {
+    width: 100%;
+    min-height: 110px;
+  }
+}
+
+.page-header__wrapper {
+  min-height: 70px;
+  position: relative;
+
+  @media (min-width: $tablets) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    @include container();
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 8px;
+  left: -55px;
+  width: 146.3px;
+  height: 40px;
+  cursor: pointer;
+
+  @media (min-width: $tablets) {
+    top: 28px;
+    left: 30px;
+  }
+  
+  @media (min-width: $desktop)  {
+  }
+}
+
+.page-header__logo-svg {
+  width: 146.3px;
+  height: 40.3px;
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+    transition: .2s;
+  }
+
+  &:active {
+    fill: rgba($white, 0.3);
+  }
+}
+
+.page-header__logo-tablet {
+    display: none;
+
+  @media (min-width: $tablets) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.page-header__logo-desktop-star {
+  display: none;
+  fill: $pink;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.page-header__logo-svg:hover .page-header__logo-desktop-star {
+  fill: $white;
+}
